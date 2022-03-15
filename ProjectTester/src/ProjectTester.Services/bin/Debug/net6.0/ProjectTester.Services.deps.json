@@ -7,9 +7,6 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "ProjectTester.Services/1.0.0": {
-        "dependencies": {
-          "ProjectTester.Domain": "1.0.0"
-        },
         "runtime": {
           "ProjectTester.Services.dll": {}
         }

@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "ProjectTester.WebApi/1.0.0": {
         "dependencies": {
-          "ProjectTester.Domain": "1.0.0",
           "ProjectTester.Services": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -64,9 +63,6 @@
         }
       },
       "ProjectTester.Services/1.0.0": {
-        "dependencies": {
-          "ProjectTester.Domain": "1.0.0"
-        },
         "runtime": {
           "ProjectTester.Services.dll": {}
         }
