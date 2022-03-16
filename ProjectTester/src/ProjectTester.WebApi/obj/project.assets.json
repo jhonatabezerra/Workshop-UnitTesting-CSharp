@@ -73,9 +73,22 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "ProjectTester.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ProjectTester.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectTester.Domain.dll": {}
+        }
+      },
       "ProjectTester.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ProjectTester.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ProjectTester.Services.dll": {}
         },
@@ -211,6 +224,11 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
+    "ProjectTester.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ProjectTester.Domain/ProjectTester.Domain.csproj",
+      "msbuildProject": "../ProjectTester.Domain/ProjectTester.Domain.csproj"
+    },
     "ProjectTester.Services/1.0.0": {
       "type": "project",
       "path": "../ProjectTester.Services/ProjectTester.Services.csproj",
@@ -219,6 +237,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ProjectTester.Domain >= 1.0.0",
       "ProjectTester.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -255,6 +274,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj": {
+              "projectPath": "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj"
+            },
             "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Services\\ProjectTester.Services.csproj": {
               "projectPath": "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Services\\ProjectTester.Services.csproj"
             }

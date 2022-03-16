@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ProjectTester.Domain\ProjectTester.Domain.csproj" />
     <ProjectReference Include="..\ProjectTester.Services\ProjectTester.Services.csproj" />
   </ItemGroup>
 

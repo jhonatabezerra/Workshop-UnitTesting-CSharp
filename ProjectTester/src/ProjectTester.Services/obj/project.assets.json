@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ProjectTester.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ProjectTester.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectTester.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ProjectTester.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ProjectTester.Domain/ProjectTester.Domain.csproj",
+      "msbuildProject": "../ProjectTester.Domain/ProjectTester.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ProjectTester.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jhona\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj": {
+              "projectPath": "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
