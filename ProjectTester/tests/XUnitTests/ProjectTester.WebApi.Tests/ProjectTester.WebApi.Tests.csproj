@@ -23,14 +23,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<InternalsVisibleTo Include="YourTestProjectName" />
-	</ItemGroup>
-	<ItemGroup>
-		<InternalsVisibleTo Include="..\..\src\ProjectTester.WebApi\ProjectTester.WebApi.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\..\src\ProjectTester.WebApi\ProjectTester.WebApi.csproj" />
+	  <ProjectReference Include="..\..\..\src\ProjectTester.Domain\ProjectTester.Domain.csproj" />
+	  <ProjectReference Include="..\..\..\src\ProjectTester.WebApi\ProjectTester.WebApi.csproj" />
 	</ItemGroup>
 
 </Project>
