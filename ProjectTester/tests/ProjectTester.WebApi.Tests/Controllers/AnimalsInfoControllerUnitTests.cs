@@ -5,7 +5,7 @@ using ProjectTester.Services.Provider;
 using ProjectTester.WebApi.Controllers;
 using Xunit;
 
-namespace ProjectTester.WebApi.Tests.ControllersTests
+namespace ProjectTester.WebApi.Tests.Controllers
 {
     public class AnimalsInfoControllerUnitTests
     {
