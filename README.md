@@ -32,6 +32,8 @@ BRD
 ----
 
 ## Architecture
+
+```sh
 -- src
   |__ ProjectTester.Domain
   |__ ProjectTester.Services
@@ -39,6 +41,7 @@ BRD
 -- test
   |__ XUnitTests
      |__  ProjectTester.WebApi.Tests
+```
 
 ### ProjectTester.Domain project
 This project is responsible for containing the Domain (Models, Interfaces, Abstracts, Proprieties).
