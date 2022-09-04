@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc.Testing;
 using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -15,16 +16,17 @@ namespace ProjectTester.WebApi.Tests
         public async Task GetAsync_WhenCallSwaggerPage_ShouldReturnHttp200()
         {
             // Arrange
-            var client = _factory.CreateClient();
+            const string path = "/swagger/index.html";
+            HttpClient client = _factory.CreateClient();
 
             // Act
-            var response = await client.GetAsync("/swagger/index.html");
-            var context = await response.Content.ReadAsStringAsync();
+            HttpResponseMessage response = await client.GetAsync(path);
+            string context = await response.Content.ReadAsStringAsync();
 
             // Assert
             response.EnsureSuccessStatusCode();
             Assert.NotEmpty(context);
-            Assert.Equal(response.StatusCode, HttpStatusCode.OK);
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
     }
 }

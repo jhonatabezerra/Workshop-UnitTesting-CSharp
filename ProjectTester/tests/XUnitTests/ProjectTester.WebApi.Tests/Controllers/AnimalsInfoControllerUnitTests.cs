@@ -24,7 +24,7 @@ namespace ProjectTester.WebApi.Tests.Controllers
         public void GetAnimals_WhenCallApiController_ShouldReturnAnimalInstance()
         {
             // Arrange
-            var animal = new Animal
+            Animal animal = new()
             {
                 Name = "Dog",
                 Quantity = 1,

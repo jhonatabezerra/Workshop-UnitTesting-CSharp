@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Services\\ProjectTester.Services.csproj": {}
+    "C:\\Users\\jhona\\source\\Workshop-UnitTesting-CSharp\\ProjectTester\\src\\ProjectTester.Services\\ProjectTester.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj": {
+    "C:\\Users\\jhona\\source\\Workshop-UnitTesting-CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\jhona\\source\\Workshop-UnitTesting-CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj",
         "projectName": "ProjectTester.Domain",
-        "projectPath": "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj",
+        "projectPath": "C:\\Users\\jhona\\source\\Workshop-UnitTesting-CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj",
         "packagesPath": "C:\\Users\\jhona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Domain\\obj\\",
+        "outputPath": "C:\\Users\\jhona\\source\\Workshop-UnitTesting-CSharp\\ProjectTester\\src\\ProjectTester.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,7 +49,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -58,18 +59,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Services\\ProjectTester.Services.csproj": {
+    "C:\\Users\\jhona\\source\\Workshop-UnitTesting-CSharp\\ProjectTester\\src\\ProjectTester.Services\\ProjectTester.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Services\\ProjectTester.Services.csproj",
+        "projectUniqueName": "C:\\Users\\jhona\\source\\Workshop-UnitTesting-CSharp\\ProjectTester\\src\\ProjectTester.Services\\ProjectTester.Services.csproj",
         "projectName": "ProjectTester.Services",
-        "projectPath": "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Services\\ProjectTester.Services.csproj",
+        "projectPath": "C:\\Users\\jhona\\source\\Workshop-UnitTesting-CSharp\\ProjectTester\\src\\ProjectTester.Services\\ProjectTester.Services.csproj",
         "packagesPath": "C:\\Users\\jhona\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Services\\obj\\",
+        "outputPath": "C:\\Users\\jhona\\source\\Workshop-UnitTesting-CSharp\\ProjectTester\\src\\ProjectTester.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj": {
-                "projectPath": "C:\\Users\\jhona\\source\\repos\\Workshop---Unit-Test-With-Xunit_CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj"
+              "C:\\Users\\jhona\\source\\Workshop-UnitTesting-CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj": {
+                "projectPath": "C:\\Users\\jhona\\source\\Workshop-UnitTesting-CSharp\\ProjectTester\\src\\ProjectTester.Domain\\ProjectTester.Domain.csproj"
               }
             }
           }
@@ -111,7 +112,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -120,7 +122,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
