@@ -3,16 +3,16 @@
 How to create Unit Test or Automation Test with xUnit/nUnit/FluentAssertions and using C# / .NET
 
 ## Table of contents
-* [Purpose](#Purpose)
-* [Challenge for test cases](#Challenge-for-test-cases)
-* [Instructions](#Instructions)
-* [What is unit test?](#What-is-unit-test?)
-* [How important is unit testing?](#How-important-is-unit-testing?)
-* [What is test coverage?](#What-is-test-coverage?)
-* [How to create a unit test?](#How-to-create-a-unit-test?)
-* [What is an integration test?](#What-is-an-integration-test?)
-* [How to create an integration test?](#How-to-create-an-integration-test?)
-* [Architecture](#Architecture)
+* [Purpose](#purpose)
+* [Challenge for test cases](#challenge-for-test-cases)
+* [Instructions](#instructions)
+* [What is unit test?](#what-is-unit-test)
+* [How important is unit testing?](#how-important-is-unit-testing)
+* [What is test coverage?](#what-is-test-coverage)
+* [How to create a unit test?](#how-to-create-a-unit-test)
+* [What is an integration test?](#what-is-an-integration-test)
+* [How to create an integration test?](#how-to-create-an-integration-test)
+* [Architecture](#architecture)
 
 # Purpose
 The purpose of this workshop is to show you how to create unit test scenarios and integration tests following best testing practices and using test libraries (xUnit, nUnit, FluentAssertions).
