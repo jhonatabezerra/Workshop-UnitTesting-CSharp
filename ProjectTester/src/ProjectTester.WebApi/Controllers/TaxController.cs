@@ -9,12 +9,12 @@ namespace ProjectTester.WebApi.Controllers
     public class TaxController : ControllerBase
     {
         private readonly ILogger<TaxController> _logger;
-        private readonly TransactionProvider _transactionProvider;
+        private readonly ITransactionProvider _transactionProvider;
 
-        public TaxController(ILogger<TaxController> logger, TransactionProvider transactionProvider)
+        public TaxController(ILogger<TaxController> logger, ITransactionProvider transactionProvider)
         {
             _logger = logger;
-            _transactionProvider = transactionProvider ?? new();
+            _transactionProvider = transactionProvider;
         }
 
         [HttpGet("~/GetOperation")]

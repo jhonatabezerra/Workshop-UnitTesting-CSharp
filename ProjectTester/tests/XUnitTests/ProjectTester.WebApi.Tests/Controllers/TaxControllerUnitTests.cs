@@ -10,15 +10,15 @@ namespace ProjectTester.WebApi.Tests.Controllers
 {
     public class TaxControllerUnitTests
     {
-        private readonly TransactionProvider _transactionProvider;
+        private readonly Mock<ITransactionProvider> _transactionProviderMock;
         private readonly TaxController _taxController;
         private readonly Mock<ILogger<TaxController>> _loggerMock;
 
         public TaxControllerUnitTests()
         {
-            _loggerMock = new Mock<ILogger<TaxController>>();
-            _transactionProvider = new TransactionProvider();
-            _taxController = new TaxController(_loggerMock.Object, _transactionProvider);
+            _loggerMock = new Mock<ILogger<TaxController>>(MockBehavior.Loose);
+            _transactionProviderMock = new Mock<ITransactionProvider>(MockBehavior.Strict);
+            _taxController = new TaxController(_loggerMock.Object, _transactionProviderMock.Object);
         }
 
         [Fact]
@@ -32,6 +32,8 @@ namespace ProjectTester.WebApi.Tests.Controllers
                 Quantity = 1
             };
 
+            _transactionProviderMock.Setup(_ => _.GetOperation()).Returns(operation).Verifiable();
+
             // Act
             var result = _taxController.GetOperation();
 
@@ -40,6 +42,8 @@ namespace ProjectTester.WebApi.Tests.Controllers
             Assert.Equal(result.Operation, operation.Operation);
             Assert.Equal(result.UnitCost, operation.UnitCost);
             Assert.Equal(result.Quantity, operation.Quantity);
+
+            _transactionProviderMock.Verify(_ => _.GetOperation(), Times.Once);
         }
     }
 }

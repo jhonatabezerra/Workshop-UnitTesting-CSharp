@@ -15,7 +15,7 @@ namespace ProjectTester.WebApi
         /// <param name="services">Serivces configuration.</param>
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<TransactionProvider>();
+            services.AddScoped<ITransactionProvider, TransactionProvider>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

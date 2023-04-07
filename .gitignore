@@ -364,3 +364,5 @@ FodyWeavers.xsd
 /ProjectTester/.vs
 /ProjectTester/tests/ProjectTester.WebApi.Tests/obj
 /ProjectTester/src/ProjectTester.WebApi/obj
+/ProjectTester/src/ProjectTester.Domain/obj
+/ProjectTester/src/ProjectTester.Services/obj
